@@ -1,0 +1,16 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}Наши контакты{% endblock %}
+
+{% block content %}
+<h2>Наши контакты</h2>
+<div class="card">
+    {% for office in offices %}
+        <div class="contact">
+            <h3>{{ office.office_name }}</h3>
+            <p>Адрес: {{ office.office_address }}</p>
+            <p>Контактный номер: {{ office.office_contacts }}</p>
+        </div>
+    {% endfor %}
+</div>
+{% endblock %}

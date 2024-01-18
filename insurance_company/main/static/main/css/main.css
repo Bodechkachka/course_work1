@@ -1,0 +1,146 @@
+header{
+    width: 100%;
+    height: 50px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: rgb(199, 179, 245);
+    display: flex;
+    left: 0px;
+    top: 0px;
+}
+header nav {
+    margin: 0 auto;
+}
+header nav ul{
+    list-style-type: none;
+    display: flex;
+}
+header nav ul a{
+    font-size: 18px;
+    text-decoration: none;
+    color: midnightblue;
+}
+header nav ul li + li{
+    margin-left: 150px;
+}
+header nav ul li:hover, header nav ul a:hover{
+    color: rgb(32, 32, 138);
+    text-decoration: none;
+    transform: scale(1.1);
+}
+
+.page{
+    margin: 70px auto;
+    width: 90%;
+}
+.page h2{
+    font-size: 48px;
+    font-family: sans-serif;
+    text-align: center;
+    font-weight: 500;
+}
+
+.info{
+    margin: 0 auto;
+    width: 70%;
+    height: auto;
+    background-color: wheat;
+}
+.info p {
+    margin: 25px;
+    font-family: sans-serif;
+    font-size: 24px;
+    text-align: justify;
+    line-height: 36px;
+}
+
+.card {
+    margin: 75px auto;
+    width: 80%;
+    height: 100%;
+    font-family: sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    align-content: flex-start;
+}
+
+.rate {
+    margin: 0 auto;
+    margin-top: 25px;
+    width: 60%;
+    height: 200px;
+    background-color: wheat;
+    position: relative;
+}
+.rate h3 {
+    text-align: center;
+    font-size: 24px;
+}
+.rate p {
+    text-align: center;
+    font-size: 24px;
+}
+
+.agent {
+    margin: 0 auto;
+    margin-top: 25px;
+    width: 45%;
+    height: 200px;
+    background-color: wheat;
+    position: relative;
+}
+.agent h3 {
+    text-align: center;
+    font-size: 24px;
+}
+.agent p {
+    text-align: center;
+    font-size: 24px;
+}
+
+.contact {
+    margin: 0 auto;
+    margin-top: 25px;
+    width: 45%;
+    height: 200px;
+    background-color: wheat;
+    position: relative;
+}
+.contact h3 {
+    text-align: center;
+    font-size: 24px;
+}
+.contact p {
+    text-align: center;
+    font-size: 24px;
+}
+
+form {
+    margin: 0 auto;
+    width: 80%;
+    height: 60px;
+    position: relative;
+}
+form input {
+    width: 100%;
+    height: 30px;
+    border: 2px solid lightblue;
+    background-color: wheat;
+}
+form input:focus{
+    background-color: lightblue;
+    border: none;
+}
+form button {
+    background-color: wheat;
+    font-family: sans-serif;
+    border: none;
+    padding: 16px 32px;
+    text-decoration: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}

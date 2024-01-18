@@ -1,0 +1,15 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}Наши тарифы{% endblock %}
+
+{% block content %}
+<h2>Наши тарифы</h2>
+<div class="card">
+    {% for rate in rates %}
+        <div class="rate">
+            <h3>{{ rate.tariff_name}}: {{ rate.tariff_rate }}%</h3>
+            <p>Срок действия: {{ rate.contract_term}} дней</p>
+        </div>
+    {% endfor %}
+</div>
+{% endblock %}

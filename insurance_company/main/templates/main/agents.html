@@ -1,0 +1,15 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}Наши агенты{% endblock %}
+
+{% block content %}
+<h2>Наши агенты</h2>
+<div class="card">
+    {% for agent in agents %}
+        <div class="agent">
+            <h3>{{ agent.full_name }}</h3>
+            <p>Контактный номер: {{ agent.agent_contacts }}</p>
+        </div>
+    {% endfor %}
+</div>
+{% endblock %}
